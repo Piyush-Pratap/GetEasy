@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/loginbackground"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="false"
+            android:id="@+id/collegeregister"
+            android:text="College Register"
+            android:textColor="@color/purple_500"
+            android:textSize="40dp"
+            android:gravity="center"
+            android:layout_marginTop="90dp"
+            android:textStyle="italic" />
+
+        <EditText
+            android:id="@+id/collegename"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/collegeregister"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="30dp"
+            android:background="#60ffffff"
+            android:drawableLeft="@drawable/ic_baseline_account_balance_24"
+            android:drawablePadding="15dp"
+            android:hint="college name"
+            android:padding="20dp"
+            android:textColorHint="@color/purple_500"
+            android:textSize="15dp" />
+
+        <EditText
+            android:id="@+id/collegeemail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/collegename"
+            android:hint="enter email"
+            android:textSize="15dp"
+            android:background="#60ffffff"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:drawableLeft="@drawable/ic_baseline_email_24"
+            android:drawablePadding="15dp"
+            android:padding="20dp"
+            android:textColorHint="@color/purple_500" />
+
+        <EditText
+            android:id="@+id/collegecontact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/collegeemail"
+            android:hint="contact"
+            android:textSize="15dp"
+            android:background="#60ffffff"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:drawableLeft="@drawable/ic_baseline_phone_24"
+            android:inputType="number"
+            android:drawablePadding="15dp"
+            android:padding="20dp"
+            android:textColorHint="@color/purple_500" />
+
+        <EditText
+            android:id="@+id/collegepassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/collegecontact"
+            android:hint="enter password"
+            android:textSize="15dp"
+            android:background="#60ffffff"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:drawableLeft="@drawable/ic_baseline_lock_24"
+            android:drawablePadding="15dp"
+            android:inputType="textPassword"
+            android:padding="20dp"
+            android:textColorHint="@color/purple_500" />
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/collegesubmitbtn"
+            android:layout_below="@id/collegepassword"
+            android:text="Submit"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"/>
+
+
+    </RelativeLayout>
+
+</ScrollView>

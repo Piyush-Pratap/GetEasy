@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TabActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Jobs:-"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:id="@+id/textview1"
+        android:textColor="@color/purple_500"
+        android:layout_marginTop="10dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:id="@+id/recycletext1"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textview1"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Internships:-"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:layout_below="@id/recycletext1"
+        android:id="@+id/textview2"
+        android:textColor="@color/purple_500"
+        android:layout_marginTop="10dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:id="@+id/recycletext2"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textview2"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Training:-"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:id="@+id/textview3"
+        android:textColor="@color/purple_500"
+        android:layout_below="@id/recycletext2"
+        android:layout_marginTop="10dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:id="@+id/recycletext3"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textview3"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Events:-"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:id="@+id/textview4"
+        android:layout_below="@id/recycletext3"
+        android:textColor="@color/purple_500"
+        android:layout_marginTop="10dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:id="@+id/recycletext4"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textview4"/>
+
+
+</RelativeLayout>

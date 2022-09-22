@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/loginbackground"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/companyregister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="false"
+            android:layout_marginTop="80dp"
+            android:gravity="center"
+            android:text="Company/Organization Register"
+            android:textColor="@color/purple_500"
+            android:textSize="35dp"
+            android:textStyle="italic"/>
+
+        <EditText
+            android:id="@+id/companyname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/companyregister"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="30dp"
+            android:background="#60ffffff"
+            android:drawableLeft="@drawable/ic_baseline_account_balance_24"
+            android:drawablePadding="15dp"
+            android:hint="company/organiztion name"
+            android:padding="20dp"
+            android:textColorHint="@color/purple_500"
+            android:textSize="15dp" />
+
+        <EditText
+            android:id="@+id/companyemail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/companyname"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="30dp"
+            android:background="#60ffffff"
+            android:drawableLeft="@drawable/ic_baseline_email_24"
+            android:drawablePadding="15dp"
+            android:hint="enter email"
+            android:padding="20dp"
+            android:textColorHint="@color/purple_500"
+            android:textSize="15dp" />
+
+        <EditText
+            android:id="@+id/companycontact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/companyemail"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="30dp"
+            android:background="#60ffffff"
+            android:drawableLeft="@drawable/ic_baseline_phone_24"
+            android:drawablePadding="15dp"
+            android:hint="contact"
+            android:inputType="number"
+            android:padding="20dp"
+            android:textColorHint="@color/purple_500"
+            android:textSize="15dp" />
+
+        <EditText
+            android:id="@+id/companypassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/companycontact"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="30dp"
+            android:background="#60ffffff"
+            android:drawableLeft="@drawable/ic_baseline_lock_24"
+            android:drawablePadding="15dp"
+            android:hint="enter password"
+            android:inputType="textPassword"
+            android:padding="20dp"
+            android:textColorHint="@color/purple_500"
+            android:textSize="15dp" />
+
+        <EditText
+            android:id="@+id/companylink"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/companypassword"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="30dp"
+            android:background="#60ffffff"
+            android:drawableLeft="@drawable/ic_baseline_add_link_24"
+            android:drawablePadding="15dp"
+            android:hint="official website link"
+            android:padding="20dp"
+            android:textColorHint="@color/purple_500"
+            android:textSize="15dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/companysubmitbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/companylink"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="Submit" />
+
+    </RelativeLayout>
+
+
+</ScrollView>

@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/loginbackground">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="false"
+            android:id="@+id/signin"
+            android:text="Student Register"
+            android:textColor="@color/purple_500"
+            android:textSize="35dp"
+            android:gravity="center"
+            android:layout_marginTop="40dp"
+            android:textStyle="italic" />
+
+        <EditText
+            android:id="@+id/usernamestudent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/signin"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="30dp"
+            android:background="#60ffffff"
+            android:drawableLeft="@drawable/ic_baseline_person_outline_24"
+            android:drawablePadding="15dp"
+            android:hint="user name"
+            android:padding="10dp"
+            android:textColorHint="@color/purple_500"
+            android:textSize="15dp" />
+
+        <EditText
+            android:id="@+id/emailstudent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/usernamestudent"
+            android:hint="enter email"
+            android:textSize="15dp"
+            android:background="#60ffffff"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:drawableLeft="@drawable/ic_baseline_email_24"
+            android:drawablePadding="15dp"
+            android:padding="10dp"
+            android:textColorHint="@color/purple_500" />
+
+        <EditText
+            android:id="@+id/collegestudent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/emailstudent"
+            android:hint="college"
+            android:textSize="15dp"
+            android:background="#60ffffff"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:drawableLeft="@drawable/ic_baseline_account_balance_24"
+            android:drawablePadding="15dp"
+            android:padding="10dp"
+            android:textColorHint="@color/purple_500" />
+
+        <EditText
+            android:id="@+id/contactstudent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/collegestudent"
+            android:hint="contact"
+            android:textSize="15dp"
+            android:background="#60ffffff"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:drawableLeft="@drawable/ic_baseline_phone_24"
+            android:inputType="number"
+            android:drawablePadding="15dp"
+            android:padding="10dp"
+            android:textColorHint="@color/purple_500" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinnerstudent"
+            android:layout_below="@id/contactstudent"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="30dp"
+            android:hint="Degree"
+            android:textColorHint="@color/purple_500"
+            android:padding="3dp">
+
+            <AutoCompleteTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinner1student"
+                android:backgroundTint="#70ffffff"
+                android:inputType="none">
+
+
+            </AutoCompleteTextView>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinnersstudent"
+            android:layout_below="@id/spinnerstudent"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="30dp"
+
+            android:hint="Branch"
+            android:textColorHint="@color/purple_500"
+            android:padding="3dp">
+
+            <AutoCompleteTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinner2student"
+                android:backgroundTint="#70ffffff"
+                android:inputType="none">
+
+
+            </AutoCompleteTextView>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <EditText
+            android:id="@+id/studentpassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/spinnersstudent"
+            android:hint="enter password"
+            android:textSize="15dp"
+            android:background="#70ffffff"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:drawableLeft="@drawable/ic_baseline_lock_24"
+            android:drawablePadding="15dp"
+            android:inputType="textPassword"
+            android:padding="10dp"
+            android:textColorHint="@color/purple_500" />
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/studentsubmitbtn"
+            android:layout_below="@id/studentpassword"
+            android:text="Submit"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"/>
+
+
+    </RelativeLayout>
+
+
+</ScrollView>

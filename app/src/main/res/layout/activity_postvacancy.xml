@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/transitioncontainer"
+    android:layout_height="match_parent"
+    android:background="@drawable/loginbackground">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="false"
+            android:id="@+id/postvacancy"
+            android:text="Post Vacancy"
+            android:textColor="@color/purple_500"
+            android:textSize="35dp"
+            android:gravity="center"
+            android:layout_marginTop="40dp"
+            android:textStyle="italic" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinnerpost"
+            android:layout_below="@id/postvacancy"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="30dp"
+            android:hint="Category"
+            android:textColorHint="@color/purple_500"
+            android:padding="3dp">
+
+            <AutoCompleteTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinner1post"
+                android:backgroundTint="#70ffffff"
+                android:inputType="none">
+
+
+            </AutoCompleteTextView>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <EditText
+            android:id="@+id/titlepost"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/spinnerpost"
+            android:hint="enter title"
+            android:textSize="15dp"
+            android:background="#60ffffff"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:drawableLeft="@drawable/ic_baseline_title_24"
+            android:drawablePadding="15dp"
+            android:padding="10dp"
+            android:textColorHint="@color/purple_500" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner2post"
+            android:layout_below="@id/titlepost"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="30dp"
+            android:hint="Degree"
+            android:textColorHint="@color/purple_500"
+            android:padding="3dp">
+
+            <AutoCompleteTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinner3post"
+                android:backgroundTint="#70ffffff"
+                android:inputType="none">
+
+
+            </AutoCompleteTextView>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <EditText
+            android:id="@+id/branchpost"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/spinner2post"
+            android:hint="Branch: ex-CS/IT/ME"
+            android:textSize="15dp"
+            android:background="#60ffffff"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:drawablePadding="15dp"
+            android:padding="10dp"
+            android:textColorHint="@color/purple_500" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/branchpost"
+            android:id="@+id/branchtext"
+            android:textSize="15sp"
+            android:text="Enter special branch or enter 'all'"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:textColor="@color/purple_500"/>
+
+        <EditText
+            android:id="@+id/timepost"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/branchtext"
+            android:hint="Internship time"
+            android:textSize="15dp"
+            android:background="#60ffffff"
+            android:drawableLeft="@drawable/ic_baseline_access_time_24"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:inputType="datetime"
+            android:visibility="gone"
+            android:drawablePadding="15dp"
+            android:padding="10dp"
+            android:textColorHint="@color/purple_500" />
+
+        <EditText
+            android:id="@+id/datepost"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/timepost"
+            android:hint="Last date for apply"
+            android:textSize="15dp"
+            android:background="#60ffffff"
+            android:drawableLeft="@drawable/ic_baseline_date_range_24"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:inputType="date"
+            android:visibility="gone"
+            android:drawablePadding="15dp"
+            android:padding="10dp"
+            android:textColorHint="@color/purple_500" />
+
+        <EditText
+            android:id="@+id/eventpost"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/datepost"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="30dp"
+            android:background="#60ffffff"
+            android:drawableLeft="@drawable/ic_baseline_date_range_24"
+            android:drawablePadding="15dp"
+            android:hint="event date"
+            android:inputType="datetime"
+            android:visibility="gone"
+            android:padding="10dp"
+            android:textColorHint="@color/purple_500"
+            android:textSize="15dp" />
+
+        <EditText
+            android:id="@+id/trainingpost"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/eventpost"
+            android:hint="Training duration"
+            android:textSize="15dp"
+            android:background="#60ffffff"
+            android:drawableLeft="@drawable/ic_baseline_update_24"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:visibility="gone"
+            android:drawablePadding="15dp"
+            android:padding="10dp"
+            android:textColorHint="@color/purple_500" />
+
+        <EditText
+            android:id="@+id/Applylink"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/trainingpost"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="30dp"
+            android:background="#60ffffff"
+            android:drawableLeft="@drawable/ic_baseline_add_link_24"
+            android:drawablePadding="15dp"
+            android:hint="Link for apply"
+            android:padding="20dp"
+            android:textColorHint="@color/purple_500"
+            android:textSize="15dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/postsubmitbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Applylink"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="Post" />
+
+
+    </RelativeLayout>
+
+
+
+</ScrollView>
